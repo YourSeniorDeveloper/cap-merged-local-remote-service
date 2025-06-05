@@ -29,3 +29,4 @@ entity Materials : cuid {
   items: Association to many RequisitionItems on items.material = $self;
 }
 
+using from '@sap/cds-common-content';
