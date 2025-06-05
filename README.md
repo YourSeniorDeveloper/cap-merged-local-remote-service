@@ -1,25 +1,8 @@
-# Getting Started
+# Apresentação
 
-Welcome to your new project.
+Este é o primeiro aplicativo que será utilizado no nosso treinamento. Ele consiste em um cadastro de materiais juntamente com um menu onde os usuários poderão criar requisições de compra
 
-It contains these folders and files, following our recommended project layout:
+# Passos após a clonagem do repositório;
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+executar cds deploy para criar o arquivo sqlite.db
 
-
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
