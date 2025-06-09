@@ -1,3 +1,4 @@
+using { Northwind } from './external/Northwind.cds'; 
 using { cap_simple_req as my } from '../db/schema.cds';
 
 @path: '/service/cap_simple_req'

@@ -16,7 +16,9 @@
     "@sap/xssec": "^4.8.0",
     "express": "^4",
     "hdb": "^0.19.12",
-    "passport": "^0.7.0"
+    "passport": "^0.7.0",
+    "@sap-cloud-sdk/connectivity": "^3",
+    "@sap-cloud-sdk/resilience": "^3"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.10.0",
@@ -54,6 +56,18 @@
         "[production]": {
           "kind": "xsuaa"
         }
+      },
+      "Northwind": {
+        "kind": "odata",
+        "model": "srv/external/Northwind",
+        "[production]": {
+          "credentials": {
+            "destination": "Northwind",
+            "path": "/V4/Northwind/Northwind.svc"
+          }
+        },
+        "csrf": true,
+        "csrfInBatch": true
       }
     }
   },
