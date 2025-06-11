@@ -1,1 +1,0 @@
-using cap_simple_reqSrv as service from '../../srv/service';

@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"cap_simple_reqSrv","DetailsURL":"./service/cap_simple_req/","Metadata":"./service/cap_simple_req/$metadata","Entities":[{"Name":"PurchaseRequisitions","URL":"./service/cap_simple_req/PurchaseRequisitions","FioriURL":"$fiori-preview/cap_simple_reqSrv/PurchaseRequisitions#preview-app"},{"Name":"RequisitionItems","URL":"./service/cap_simple_req/RequisitionItems","FioriURL":"$fiori-preview/cap_simple_reqSrv/RequisitionItems#preview-app"},{"Name":"Materials","URL":"./service/cap_simple_req/Materials","FioriURL":"$fiori-preview/cap_simple_reqSrv/Materials#preview-app"}],"EntitiesCount":3}]}
+                            const data = {"Services":[{"ServiceName":"cap_simple_reqSrv","DetailsURL":"./service/cap_simple_req/","Metadata":"./service/cap_simple_req/$metadata","Entities":[{"Name":"PurchaseRequisitions","URL":"./service/cap_simple_req/PurchaseRequisitions","FioriURL":"$fiori-preview/cap_simple_reqSrv/PurchaseRequisitions#preview-app"},{"Name":"RequisitionItems","URL":"./service/cap_simple_req/RequisitionItems","FioriURL":"$fiori-preview/cap_simple_reqSrv/RequisitionItems#preview-app"},{"Name":"ExtProducts","URL":"./service/cap_simple_req/ExtProducts","FioriURL":"$fiori-preview/cap_simple_reqSrv/ExtProducts#preview-app"}],"EntitiesCount":3}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });

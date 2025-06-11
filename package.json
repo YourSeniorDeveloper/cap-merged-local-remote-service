@@ -30,7 +30,7 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-materials-list-report": "cds watch --open materials-list-report/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-cap_simple_req.myapplication": "cds watch --open cap_simple_req.myapplication/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
@@ -73,6 +73,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/materials-list-report"
+    "app/cap_simple_req.myapplication",
+    "app/cap_simple_req.myapplication"
   ]
 }

@@ -1,6 +1,2 @@
 
-using from './purchase-requisitions/annotations';
-
-
-
-using from './materials-list-report/annotations';
+using from './cap_simple_req.myapplication/annotations';
