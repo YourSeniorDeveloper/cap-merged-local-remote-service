@@ -89,7 +89,44 @@ annotate service.RequisitionItems with @(
             Value : unitPrice,
             Label : 'unitPrice',
         },
-    ]
+    ],
+    UI.Facets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Cadastro Item',
+            ID : 'CadastroItem',
+            Target : '@UI.FieldGroup#CadastroItem',
+        },
+    ],
+    UI.FieldGroup #CadastroItem : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : itemId,
+                Label : 'itemId',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : product_id,
+                Label : 'product_id',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : quantity,
+                Label : 'quantity',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : unitPrice,
+                Label : 'unitPrice',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : Currency_code,
+            },
+        ],
+    },
 );
 
 annotate service.RequisitionItems with {
